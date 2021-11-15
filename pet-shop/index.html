@@ -4,113 +4,132 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
     <title>Pet Shop</title>
 </head>
 <body>
-    <!-- Agrego un fondo para ver las imagenes blancas -->
-    <style>
-        body{
-            background-color: #f0c069;
-        }
-    </style>
     <header>
-        <div>
+        <div class="barra-sup">
             <p>Grandes ofertas en comederos</p>
             <ul>
-                <li>ESP</li>
+                <li>Español</li>
                 <li>ARG$</li>
             </ul>
         </div>
-        <nav>
-            <a href="#"><img src="./img/Logo.png" alt="Logo Front Cat & Dog"></a>
+        <nav class="navbar">
+            <a href="#"><img class="logo-img" src="./img/Logo.png" alt="Logo Front Cat & Dog"></a>
             <ul>
-                <li><a href="#">Categorias</a></li>
-                <li><a href="#">Pets</a></li>
-                <li><a href="#">Nosotros</a></li>
-                <li><a href="#">Contactanos</a></li>
+                <li><i class="fas fa-paw"></i><a href="#productos">Categorias</a></li>
+                <li><i class="fas fa-paw"></i><a href="#">Pets</a></li>
+                <li><i class="fas fa-paw"></i><a href="#">Nosotros</a></li>
+                <li><i class="fas fa-paw"></i><a href="#contacto">Contactanos</a></li>
             </ul>
         </nav>
     </header>    
     <main>
-        <section>
-            <div>
-                <img src="./img/bowl-and-pet-daities-on-green-background 1.png" alt="banner-comedero"></span>
-            </div>
-            <h2>Es un placer tenerte aqui!</h2>
-            <p>Comederos en descuento</p>
-            <button>Comederos</button>
+        <section class="banner-container">   
+            <div class="banner-container-text">     
+                <h2>¡Es un placer tenerte aqui!</h2>
+                <p>¡Comederos en descuento!</p>
+                <a href="#" class="boton-rectangular">Comederos</a>
+            </div>    
         </section>
-        <section>
-            <div>
-                <img src="./img/pawprint 1.png" alt="paw">
-            </div>
-            <h1>Productos Destacados</h1>
-            <div>
-                <ul>
-                    <li><a href="#">Comederos</a></li>
-                    <li><a href="#">Accesorios</a></li>
-                    <li><a href="#">Comida</a></li>
-                </ul>
-            </div>
-            <div>
-                <img src="./img/churrasquito.png" alt="juguete-churrasquito">
-                <h3>Juguete Churrasquito</h3>
-                <p>$150</p>
-            </div>
-            <div>
-                <img src="./img/comedero.png" alt="comedero">
-                <h3>Comedero para perros</h3>
-                <p>$250</p>
-            </div>
-            <div>
-                <img src="./img/Huesito.png" alt="juguete-huesito">
-                <h3>Juguete Huesito</h3>
-                <p>$650</p>
-            </div>
+        <section id="productos" class="productos">
+            <div class="productos-text">
+                <div>
+                    <img src="./img/pawprint 1.png" alt="paw">
+                </div>
+                <h1>Productos Destacados</h1>
+                <div >
+                    <ul class="lista-productos">
+                        <li><a href="#">Comederos</a></li>
+                        <li><a href="#">Accesorios</a></li>
+                        <li><a href="#">Comida</a></li>
+                    </ul>
+                </div>
+            </div>    
+            <div class="cards-productos">
+                <article class="card">
+                    <img src="./img/churrasquito.png" alt="juguete-churrasquito">
+                    <h3>Juguete Churrasquito</h3>
+                    <p class="precio">$150</p>
+                </article>
+                <article class="card">
+                    <img src="./img/comedero.png" alt="comedero">
+                    <h3>Comedero para perros</h3>
+                    <p class="precio">$250</p>
+                </article>
+                <article class="card">
+                    <img src="./img/Huesito.png" alt="juguete-huesito">
+                    <h3>Juguete Huesito</h3>
+                    <p class="precio">$650</p>
+                </article>
+            </div>    
         </section>
 
-        <section>
-            <h2>Contactanos</h2>
-            <form action="">
+        <section id="contacto" class="form-container" >
+            <h2>Contáctanos</h2>
+            <form class="form" action="submit">
                 <input type="text" placeholder="Nombre y Apellido">
                 <input type="email" placeholder="Ingresa tu correo electronico">
                 <input type="number" placeholder="Telefono">
-                <button>Resetear</button>
-                <button>Enviar</button>
+                <div class ="botones">
+                    <a href="#" class="boton gris">Resetear</a>
+                    <a href="#" class="boton naranja">Enviar</a>
+                </div>    
             </form>
         </section>
     </main>
     <footer>
-        <div>
-            <span>
+        <div class="suscribe-container">
+            <div class="suscribe-text-container">
                 <img src="../pet-shop/img/enviar-correo 1.png" alt="enviar-correo">
-            </span>
-            <p>Suscribete para mas novedades</p>
-            <input type="email" placeholder="Ingresa tu correo electronico">
-            <button>Suscribirme</button>
-        </div>
-        <div> 
-            <div>
-                <img src="../pet-shop/img/location 1.png" alt="">
-                <h3>Localidad</h3>
-                <p>Calle-provincia</p>
+                <p>Suscribete para mas novedades</p>
+            </div>    
+            <div class="suscribe-input-container">
+                <input type="email" placeholder="Ingresa tu correo electronico">
+                <a href="#" class="boton">Suscribirme</a>
             </div>
-            <div>
-                <img src="../pet-shop/img/phone-call 1.png" alt="">
-                <h3>Telefono</h3>
-                <p>Numero de telefono</p>
-            </div>
-            <div>
-                <img src="../pet-shop/img/correo-electronico 1.png" alt="">
-                <h3>Correo Electronico</h3>
-                <p>Direccion de correo</p>
-            </div>  
         </div>
-        <div>
-            <img src="../pet-shop/img/Logo.png" alt="">
+        <div class="info-footer-global"> 
+            <div class="info-footer-container">
+                <div class="info-footer">
+                    <div class="info-img">
+                        <img src="./img/ilocation.png" alt="">
+                    </div>
+                    <div class="info-text">
+                        <h3>Localidad</h3>
+                        <p>Calle-provincia</p>
+                    </div>    
+                </div>
+
+                <div class="info-footer">
+                    <div class="info-img">
+                        <img src="./img/itelfono.png" alt="">
+                    </div>
+                    <div class="info-text">
+                        <h3>Telefono</h3>
+                        <p>Numero de telefono</p>
+                    </div>    
+                </div>
+
+                <div class="info-footer">
+                    <div class="info-img">
+                        <img src="./img/icorreo.png" alt="">
+                    </div>
+                    <div class="info-text">
+                        <h3>Correo Electronico</h3>
+                        <p>Direccion de correo</p>
+                    </div>    
+                </div> 
+            </div>    
+            <div class="logo-footer">
+                <a href="#"><img class="logo-img" src="./img/logofooter.png" alt="Logo Front Cat & Dog"></a>
+            </div>
         </div>
     </footer>
-    <div>
+    <div class="barra-inf">
         <p>Todos los derechos reservados Front End</p>
     </div>
 

@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.top{
+    height: 30px;
+    background-color: #1cd1b0;
+    padding: 5px;
+}
+
+header{
+    position: sticky;
+    top:0;
+    z-index: 9;
+}
+
+header h1{
+    height: 100px;
+    background-color: #00669f;
+    padding: 25px;
+    font-size: 40px;
+    box-shadow: 5px 5px 5px  rgba(0,0,0,0.3);
+}
+
+main{
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+.card{
+    width: 300px;
+    height: 550px;
+    position: relative;
+    display: inline-block;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: 5px 5px 5px  rgba(0,0,0,0.2); 
+}
+
+.card-background-img{
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;  
+}
+
+.bkg-batman{
+    background-image: url('./img/fondobatman.jpg');
+}
+
+.bkg-harley{
+    background-image: url('./img/fondoharley.jpg');
+}
+
+.heart{
+   width: 30px;  
+   position: absolute;
+   top:20px;
+   left: 20px;
+}
+
+.text{
+    width: 100%;
+    height:350px;
+    text-align: center;
+    background-color: #f3f3f3;
+    padding: 80px 20px 0 20px;
+}
+
+h2{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.text p{
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+img{
+    width: 50%;
+    border-radius: 50%;
+    position: absolute;
+    top: 120px;
+    left: 75px;
+}
+
+.button{
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    background-color: #00669f;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+footer{
+    height: 30px;
+    background-color: #00669f;
+    color: #ffffff; 
+}
+
+footer p{
+    padding: 5px;
+}
